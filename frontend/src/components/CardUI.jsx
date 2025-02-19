@@ -9,6 +9,7 @@ const CardLayout = () => {
       title: "FOOTBALL",
       description:
         "Step onto the field with this card and feel the passion, intensity, and global love for the beautiful game.",
+      path: "/football",
     },
     {
       imageUrl:
@@ -16,6 +17,7 @@ const CardLayout = () => {
       title: "CRICKET",
       description:
         "Celebrate the spirit of cricket with every boundary, wicket, and moment of suspense that brings this sport to life.",
+      path: "/",
     },
     {
       imageUrl:
@@ -23,6 +25,7 @@ const CardLayout = () => {
       title: "BASKETBALL",
       description:
         "Experience the energy of the court, where every dribble, dunk, and buzzer-beater echoes with excitement.",
+      path: "/",
     },
     {
       imageUrl:
@@ -30,13 +33,15 @@ const CardLayout = () => {
       title: "HOCKEY",
       description:
         "Immerse yourself in the fast-paced world of hockey, where precision and speed collide on the ice.",
+      path: "/",
     },
     {
       imageUrl:
         "https://images.unsplash.com/flagged/photo-1574005280900-3ff489fa1f70?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       title: "BOXING",
       description:
-        "Step into the ring and unleash the adrenaline of boxing, a sport defined by grit, strategy, and determination.",
+        "Step into the ring-3 and unleash the adrenaline of boxing, a sport defined by grit, strategy, and determination.",
+      path: "/",
     },
     {
       imageUrl:
@@ -44,6 +49,7 @@ const CardLayout = () => {
       title: "CHESS",
       description:
         "Delve into the world of strategy and intellect, where every move brings you closer to ultimate victory.",
+      path: "/",
     },
     {
       imageUrl:
@@ -51,6 +57,7 @@ const CardLayout = () => {
       title: "GOLF",
       description:
         "Swing into elegance and precision, where every shot is a testament to patience, skill, and strategy.",
+      path: "/",
     },
     {
       imageUrl:
@@ -58,6 +65,7 @@ const CardLayout = () => {
       title: "MMA",
       description:
         "Feel the power and discipline of MMA, where strength and endurance define the ultimate challenge.",
+      path: "/",
     },
     {
       imageUrl:
@@ -65,6 +73,7 @@ const CardLayout = () => {
       title: "RUGBY",
       description:
         "Dive into the rugged world of rugby, a sport where teamwork, resilience, and the pursuit of victory reign.",
+      path: "/",
     },
     {
       imageUrl:
@@ -72,6 +81,7 @@ const CardLayout = () => {
       title: "RACING",
       description:
         "Accelerate into the thrilling world of racing, where speed, skill, and precision lead the charge for glory.",
+      path: "/",
     },
   ];
 
@@ -84,6 +94,7 @@ const CardLayout = () => {
           hoverBackground={card.imageUrl} // Replace with hover-specific URL if available
           title={card.title}
           description={card.description}
+          path={card.path}
         />
       ))}
     </div>

@@ -1,4 +1,5 @@
 "use client";
+import { useNavigate } from "react-router-dom";
 import { cn } from "./lib/utils";
 
 export function CardDemo({
@@ -6,7 +7,15 @@ export function CardDemo({
   hoverBackground,
   title,
   description,
+  path,
 }) {
+  const navigate = useNavigate();
+  const handleCardClick = () => {
+    if (path) {
+      // Check if a valid path exists
+      navigate(path);
+    }
+  };
   return (
     <div className="max-w-xs w-full">
       <div
@@ -16,8 +25,9 @@ export function CardDemo({
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
+        onClick={handleCardClick}
       >
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+        <div className="absolute inset-0 h-full w-full bg-linear-to-t from-black/80 via-black/50" />
         <div
           className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           style={{
@@ -69,7 +79,7 @@ export const BackgroundBlogCard = ({
           backgroundPosition: backgroundPosition, // Dynamically set the background position
         }}
       >
-        <div className="absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+        <div className="absolute inset-0 h-full w-full bg-linear-to-t from-black/80 via-black/50" />
       </CardHeader>
 
      

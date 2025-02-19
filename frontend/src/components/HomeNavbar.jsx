@@ -23,7 +23,7 @@ const HomeNavbar = () => {
             {/* Logo Section */}
             <div className="flex items-center justify-center flex-1 pr-28 ">
               <div className="flex items-center justify-center px-6 relative mx-auto">
-                <div className="hidden md:flex space-x-6">
+                <div className="hidden md:flex gap-4">
                   <a
                     href="#"
                     className="text-white font-medium hover:text-blue-600"

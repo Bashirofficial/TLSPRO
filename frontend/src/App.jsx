@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import LoadingComponent from "./components/LoadingComponent.jsx";
 import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound.jsx";
-import ESPNLayout from "./features/football/pages/FooballPage.jsx";
+import FootballLayout from "./features/football/pages/FooballPage.jsx";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -22,12 +22,9 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/football" element={<ESPNLayout />} />
+      <Route path="/football/*" element={<FootballLayout />} />
     </Routes>
   );
 }
 
 export default App;
-/* 
-     <HomePage />
-  */
